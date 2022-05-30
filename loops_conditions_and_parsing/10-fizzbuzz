@@ -5,12 +5,9 @@
 # Displays Buzz when the number is a multiple of 5
 # Otherwise, displays the number In a list format
 
-i=0
-while (( "$i" <= 100 ))
-do
-    echo "$i"
-    (( i++ ))
 
+for (( i=0; i < 101; i++ ))
+do
     if (( i % 15 == 0 )); then
         echo "FizzBuzz"
     elif (( i % 3 == 0 )); then
