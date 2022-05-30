@@ -3,7 +3,7 @@
 # username user id Home directory path for the user
 
 FL="/etc/passwd" #FILELOCATION
-while read FIELD
+while read -r FIELD
 do
     echo "$FIELD" | cut -d ":" -f1,3,6
 done < "$FL"
